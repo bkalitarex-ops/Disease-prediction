@@ -86,20 +86,20 @@ if st.button("Predict Disease"):
         
     ]])
 
-# Scaling
-input_scaled = scaler.transform(input_data)
+    # Scaling
+    input_scaled = scaler.transform(input_data)
 
-# Prediction
-prediction = model.predict(input_scaled)
+    # Prediction
+    prediction = model.predict(input_scaled)
 
-# Prediction Probabilities
-probabilities = model.predict_proba(input_scaled)[0]
+    # Prediction Probabilities
+    probabilities = model.predict_proba(input_scaled)[0]
 
-# Decode Disease Name
-disease_name = disease_encoder.inverse_transform(prediction)[0]
+    # Decode Disease Name
+    disease_name = disease_encoder.inverse_transform(prediction)[0]
 
-# Display Main Prediction
-st.success(f"MOST LIKELY DISEASE : {disease_name}")
+    # Display Main Prediction
+    st.success(f"MOST LIKELY DISEASE : {disease_name}")
 
 
 # SHOW PROBABILITIES
