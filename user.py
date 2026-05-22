@@ -12,9 +12,9 @@ import joblib
 
 # LOAD SAVED FILES
 # =========================
-model = joblib.load("/Users/bhargabkalita/Desktop/INFECTIOUS DISEASE PROJECT/best_model.pkl")
-scaler = joblib.load("/Users/bhargabkalita/Desktop/INFECTIOUS DISEASE PROJECT/scaler.pkl")
-disease_encoder = joblib.load("/Users/bhargabkalita/Desktop/INFECTIOUS DISEASE PROJECT/disease_encoder.pkl")
+model = joblib.load("best_model.pkl")
+scaler = joblib.load("scaler.pkl")
+disease_encoder = joblib.load("disease_encoder.pkl")
 
 # PAGE CONFIGURATION
 # =========================
