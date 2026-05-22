@@ -12,7 +12,7 @@ import joblib
 
 # LOAD SAVED FILES
 # =========================
-model = joblib.load("best_model.pkl")
+model = joblib.load("best_model.pkl",compress = 3)
 scaler = joblib.load("scaler.pkl")
 disease_encoder = joblib.load("disease_encoder.pkl")
 
